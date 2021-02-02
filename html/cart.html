@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta htp-equiv="X-UA-compatible" content="ie-edge">
+  <title>fapugliese</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="../css/style.css" rel="stylesheet"> 
+</head>
+
+<body>
+    <div class="bg-dark">
+        <div class="container">
+          <div class="row">
+            <nav class="col navbar navbar-expand-lg navbar-dark">
+                <a href="../index.html">
+                    <img class="mr-4" src="../images/1576141243078_Orinoco logo.png"  href="../index.html" alt="Site logo">
+                  </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Cart</a>
+                  </li>
+                </ul>
+              </div>
+              <a href="cart.html">
+              <div class="boutons">
+                <div class="panier" onclick='location.href="../html/cart.html"' data-target="panier">Cart ( <span class="totalQté"></span> )<img id="cart" class="totalQté" src="../images/shopping-cart-solid.svg"></div>  
+                </div>
+              </a>
+            </nav>
+          </div>
+        </div>    
+      </div>
+      <main>
+        <div id="basket"></div>
+         <div id="total"></div>
+  
+  
+    <form id="formulaire" >
+      <div class="form-row">
+        <div class="form-group col-md-5">
+            <label for="firstname">Name :</label>
+            <input type="text" name="firstName" class="form-control" id="firstname" placeholder="Your name..." required><span id='oublisPrenom'></span><br>
+        </div>
+        <div class="form-group col-md-5">
+            <label for="name">Last name :</label>
+            <input type="text" name="lastName" class="form-control" id="name" placeholder="Your last name..." required><span id='oublisNom'></span><br>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-5">
+            <label for="email">Email :</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="Your@email.com" required><span id='oublisEmail'></span><br>
+        </div>
+        <div class="form-group col-md-5">
+            <label for="address">Address :</label>
+            <input type="text" name="address" class="form-control" id="address" placeholder="1234 Main St" required><span id='oublisAdress'></span><br>
+        </div>
+    </div>
+        <div class="form-group col-md-8">
+            <label for="city">City :</label>
+            <input type="text" name="city" class="form-control" id="city" placeholder="Your city..." required><span id='oublisVille'></span><br>
+        </div>
+  
+      <button type="button" onclick="achat()" id="valider">Proceed to checkout</button>
+     
+    </form>
+      </main>
+      <footer class="container-fluid col-12 bg-dark">
+        <div class="row">
+          <div class="col-12 col-md">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+            <small class="d-block mb-3 text-white">© 2017-2018</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="text-white">Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-white" href="#">Cool stuff</a></li>
+              <li><a class="text-white" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="text-white">About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-white" href="#">Team</a></li>
+              <li><a class="text-white" href="#">Locations</a></li>
+              <li><a class="text-white" href="#">Privacy</a></li>
+              <li><a class="text-white" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <script src="../js/cart.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>

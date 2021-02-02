@@ -1,12 +1,94 @@
-.carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-   }
-   
-.carousel-control-next-icon {
-     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-   }
 
    #cart {
     width: 3em;
     justify-content: right;
+    color: black;
    }
+
+   .cart{
+     color: white;
+     font-weight: 700;
+     font-size: 1.5em;
+   }
+
+   img{
+    color:rgb(44, 41, 41);
+    width: 40%;
+	  border-radius:3px;
+	  border:2px solid rgb(70, 64, 64);
+    box-shadow:1px 1px 3px rgb(75, 71, 71);
+   }
+
+   article{
+    border-style: solid;
+    border-radius: 3px;
+    border-color: rgb(89, 84, 94);
+    margin: auto;
+    margin-bottom: 1%;
+    padding: 1%;
+    text-align: center;
+}
+
+.form-group{
+  width: 20%;
+  margin:auto;
+}
+
+#basket, #prixTotal{
+  font-size: 1.3em;
+  font-family: 'Coming Soon', cursive;
+  font-weight: bold; 
+  padding: 5%;
+}
+
+p, label{
+  font-size: 1.3em;
+  font-family: 'Coming Soon', cursive;
+  font-weight: bold; 
+}
+
+#valider{
+  color: black;
+  font-family: 'Coming Soon', cursive;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #ffffff;   
+  border-style: solid;   
+  border-radius: 3px;
+  border-width: 2px;   
+  border-color:rgb(15, 182, 51);
+  margin: 2%;
+  padding: 1%;
+  text-align: center;
+}
+
+main{
+  text-align: center;
+  background-image: url(images/line.png);
+  width: 100%;
+}
+
+footer{
+  margin-bottom: 0px;
+}
+
+body{
+  padding-bottom: 0px;
+}
+
+.totalQté, .panier, .nav-link{
+  color: #ffffff;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.text-center, #teddy, #price, h4, .card-title{
+  font-family: 'Permanent Marker', cursive;
+}
+
+.row{
+  text-align: center;
+}
+
+#articleListe, article{
+  border-style: hidden;
+}

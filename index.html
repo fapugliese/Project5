@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta htp-equiv="X-UA-compatible" content="ie-edge">
   <title>fapugliese</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="./css/style.css" rel="stylesheet"> 
 </head>
@@ -14,8 +17,9 @@
         <div class="container">
           <div class="row">
             <nav class="col navbar navbar-expand-lg navbar-dark">
-                <img class="mr-4" src="./images/1576141243078_Orinoco logo.png"  href="index.html" alt="Site logo">
-              <a class="navbar-brand" href="index.html">Orinoco</a>
+              <a href="./index.html">
+                <img class="mr-4" src="./images/1576141243078_Orinoco logo.png"  href="../index.html" alt="Site logo">
+              </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,9 +28,16 @@
                   <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home</a>
                   </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="./html/cart.html">Cart</a>
+                  </li>
                 </ul>
               </div>
-              <img id="cart" src="./images/shopping-cart-solid.svg">
+              <a href="./html/cart.html">
+                <div class="boutons">
+                  <div class="panier" data-target="panier">Cart ( <span class="totalQté"></span> )<img id="cart" class="totalQté" src="./images/shopping-cart-solid.svg"></div>  
+                  </div>
+                </a>
             </nav>
           </div>
         </div>    
@@ -36,64 +47,35 @@
           <h1 class="text-center">Welcome to Orinoco</h1>
         </div>
       </div>
-    <div class="container col-6 mt-4">
-        <div class="row justify-content-center align-items-center">
-          <div class="col">
-            <div id="carouselControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <a href="html/teddy1.html">
-                    <img src="images/teddy_1.jpg" class="d-block w-100" alt="Satellite">
-                    </a>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/teddy_2.jpg" class="d-block w-100" alt="Spacewalking astronaut">
-                  </div>
-                <div class="carousel-item">
-                    <img src="images/teddy_3.jpg" class="d-block w-100" alt="Spacewalking astronaut">
-                  </div>
-                <div class="carousel-item">
-                    <img src="images/teddy_4.jpg" class="d-block w-100" alt="Spacewalking astronaut">
-                  </div>
-                <div class="carousel-item">
-                    <img src="images/teddy_5.jpg" class="d-block w-100" alt="Spacewalking astronaut">
-                </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a> 
-              </div>
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">1.Choose your teddy bear</h5>
+            </div>
           </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-lg-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">1.Choose your teddy bear</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">2.Personalize your teddy</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">3.Check out your order</h5>
-                </div>
-              </div>
+        <div class="col-12 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">2.Personalize your teddy</h5>
             </div>
           </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">3.Check out your order</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+  <div id="ourson">
+
+  </div>
+        
     </div>
+  </div>
           <footer class="container-fluid col-12 bg-dark">
             <div class="row">
               <div class="col-12 col-md">
@@ -121,6 +103,7 @@
 
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="./js/index.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
