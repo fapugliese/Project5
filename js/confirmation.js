@@ -17,7 +17,7 @@ function commande(){
             `<p>Thank you for shopping with us!</p>
 
             <p>Your order number is : <span class="gras"> ${data.orderId}</span><br><br>
-            Order Total : <span class="gras">${prix} €</span>.
+            Order Total : <span class="gras">${(prix/100).toFixed(2)} U$D</span>.
             </p>
                 
             <p>We'll send a confirmation when your order ship.<br><br>

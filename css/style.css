@@ -1,16 +1,17 @@
-
+/*logo cart*/
    #cart {
     width: 3em;
     justify-content: right;
     color: black;
    }
-
+/*cart*/
    .cart{
      color: white;
      font-weight: 700;
      font-size: 1.5em;
    }
 
+   /*teddy img*/
    img{
     color:rgb(44, 41, 41);
     width: 40%;
@@ -19,6 +20,7 @@
     box-shadow:1px 1px 3px rgb(75, 71, 71);
    }
 
+   /*articles*/
    article{
     border-style: solid;
     border-radius: 3px;
@@ -29,11 +31,13 @@
     text-align: center;
 }
 
+/*group*/
 .form-group{
   width: 20%;
   margin:auto;
 }
 
+/*cart a total price*/
 #basket, #prixTotal{
   font-size: 1.3em;
   font-family: 'Coming Soon', cursive;
@@ -47,6 +51,7 @@ p, label{
   font-weight: bold; 
 }
 
+/*proceed to check out button*/
 #valider{
   color: black;
   font-family: 'Coming Soon', cursive;
@@ -62,26 +67,24 @@ p, label{
   text-align: center;
 }
 
+/*main tag*/
 main{
   text-align: center;
-  background-image: url(images/line.png);
   width: 100%;
 }
 
-footer{
-  margin-bottom: 0px;
-}
-
+/*body tag*/
 body{
   padding-bottom: 0px;
 }
+
 
 .totalQté, .panier, .nav-link{
   color: #ffffff;
   font-family: 'Permanent Marker', cursive;
 }
 
-.text-center, #teddy, #price, h4, .card-title{
+.text-center, #teddy, #price, h4, .card-title, h2, h3{
   font-family: 'Permanent Marker', cursive;
 }
 
@@ -89,6 +92,68 @@ body{
   text-align: center;
 }
 
-#articleListe, article{
+#articleListe, article, .card{
   border-style: hidden;
+}
+
+/*buttons*/
+button, #lien {
+	box-shadow: 0px 10px 14px -18px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #0344a4 100%);
+	background-color:#599bb3;
+	border-radius:13px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 20px;
+	font-weight:bold;
+	padding:8px 20px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #3d768a;
+  margin: 5px;
+}
+button:hover {
+	background:linear-gradient(to bottom, #0344a4 5%, #599bb3 100%);
+	background-color:#0344a4;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+p{
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+#footer{
+  position: fixed;
+  bottom: 0;
+}
+
+#recap{
+  margin-top: 5em;
+}
+
+.nav-link{
+  margin-right: 2em;
+}
+
+footer{
+  padding-top: 1em;
+}
+
+/*orinoco logo*/
+.logo{
+  width: 50%;
+}
+
+/*orinoco logo footer*/
+.logof{
+  width: 30%;
+}
+
+/*contact*/
+.mail{
+  color: white;
 }
