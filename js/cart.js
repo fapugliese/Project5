@@ -109,7 +109,7 @@ function chargementPanier(){
         calculQte = nombreTotalDeProduit - qté;
         localStorage.setItem('qté', calculQte);
         // Price calculation in the basket after deleting the article
-        calculPrice = coutDuPanier - qté * price;
+        calculPrice = coutDuPanier - qté * price*100;
         localStorage.setItem('prixTotal', calculPrice);
         // We delete the line of the teddy corresponding to the delete button
         delete data[nomProduit];
